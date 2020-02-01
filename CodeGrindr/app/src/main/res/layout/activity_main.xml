@@ -61,18 +61,17 @@
 
         android:layout_marginRight="50dp"
         android:background="@drawable/rounded_button"
-        android:onClick="logIn"
 
-        android:outlineProvider="bounds"
         android:elevation="2dp"
-        android:translationZ="2dp"
+        android:outlineProvider="bounds"
         android:stateListAnimator="@null"
-
         android:text="LOGIN"
+
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:translationZ="2dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -84,7 +83,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:onClick="signUp"
         android:text="Don't have an account? Sign up here!"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
