@@ -2,14 +2,24 @@ package com.example.codegrindr;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
 public class RegisteredHackActivity extends AppCompatActivity {
 
+    public void searchHack(View view) {
+        Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
+        startActivity(intent);
+    }
+
     String userName = "John Doe";
-    String[] hackathonNameArray = {"Hoya Hacks","Make Harvard","DragonHacks"};
+    String[] hackathonNameArray = {
+            "Hoya Hacks",
+            "Make Harvard",
+            "DragonHacks"};
 
     String[] dateArray = {
             "Jan 31st - Feb 2nd 2020",
