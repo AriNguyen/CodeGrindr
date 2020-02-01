@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class RegisteredHackActivity extends AppCompatActivity {
 
-    String[] nameArray = {"Hoya Hacks","Make Harvard","DragonHacks"};
+    String userName = "John Doe";
+    String[] hackathonNameArray = {"Hoya Hacks","Make Harvard","DragonHacks"};
 
     String[] dateArray = {
             "Jan 31st - Feb 2nd 2020",
@@ -28,14 +30,20 @@ public class RegisteredHackActivity extends AppCompatActivity {
 
     ListView listView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registered_hack);
 
-        CustomListAdapter whatever = new CustomListAdapter(this, nameArray, dateArray, locationArray, imageArray);
+        final TextView user_name = findViewById(R.id.user_name);
+
+        CustomListAdapter whatever = new CustomListAdapter(this, hackathonNameArray, dateArray, locationArray, imageArray);
         listView = (ListView) findViewById(R.id.registered_hackathon);
         listView.setAdapter(whatever);
+
+        user_name.setText(userName);
 
     }
 }

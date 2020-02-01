@@ -15,7 +15,7 @@ public class CustomListAdapter extends ArrayAdapter {
     //to store the animal images
     private final Integer[] imageArray;
     //to store the list of countries
-    private final String[] nameArray;
+    private final String[] hackathonNameArray;
     //to store the list of countries
     private final String[] dateArray;
     // to store location of hackathon
@@ -27,7 +27,7 @@ public class CustomListAdapter extends ArrayAdapter {
 
         this.context=context;
         this.imageArray = imageArrayParam;
-        this.nameArray = nameArrayParam;
+        this.hackathonNameArray = nameArrayParam;
         this.dateArray = dateArrayParam;
         this.locationArray = locationArrayParam;
 
@@ -44,13 +44,11 @@ public class CustomListAdapter extends ArrayAdapter {
         ImageView imageView = (ImageView) rowView.findViewById(R.id.imageView);
 
         //this code sets the values of the objects to values from the arrays
-        nameTextField.setText(nameArray[position]);
+        nameTextField.setText(hackathonNameArray[position]);
         dateTextField.setText(dateArray[position]);
         locationTextField.setText(locationArray[position]);
         imageView.setImageResource(imageArray[position]);
         return rowView;
 
     };
-
-
 }
