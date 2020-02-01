@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SearchActivity"
             android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".UserProfile"></activity>
         <activity android:name=".RegisteredHackActivity" />
         <activity android:name=".CustomListAdapter" />
         <activity android:name=".InformationActivity" />
