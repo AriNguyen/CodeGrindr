@@ -26,8 +26,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="16dp"
             android:text="TextView"
-            android:textSize="24sp"
-            tools:text="Hackathon Name" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/hackathon_date"

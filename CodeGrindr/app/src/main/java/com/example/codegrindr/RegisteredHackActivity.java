@@ -31,7 +31,7 @@ public class RegisteredHackActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_registered_hack);
 
         CustomListAdapter whatever = new CustomListAdapter(this, nameArray, dateArray, locationArray, imageArray);
         listView = (ListView) findViewById(R.id.registered_hackathon);

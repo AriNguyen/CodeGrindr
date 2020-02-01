@@ -9,14 +9,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CustomListAdapter extends ArrayAdapter {
+
     //to reference the Activity
     private final Activity context;
-    public CustomListAdapter(Activity context, String[] nameArrayParam, String[] dateArrayParam, String[] locationArrayParam, Integer[] imageIDArrayParam){
+    //to store the animal images
+    private final Integer[] imageArray;
+    //to store the list of countries
+    private final String[] nameArray;
+    //to store the list of countries
+    private final String[] dateArray;
+    // to store location of hackathon
+    private final String[] locationArray;
+
+    public CustomListAdapter(Activity context, String[] nameArrayParam, String[] dateArrayParam, String[] locationArrayParam, Integer[] imageArrayParam){
 
         super(context,R.layout.activity_registered_hackathon_row , nameArrayParam);
 
         this.context=context;
-        this.imageIDarray = imageIDArrayParam;
+        this.imageArray = imageArrayParam;
         this.nameArray = nameArrayParam;
         this.dateArray = dateArrayParam;
         this.locationArray = locationArrayParam;
@@ -37,20 +47,10 @@ public class CustomListAdapter extends ArrayAdapter {
         nameTextField.setText(nameArray[position]);
         dateTextField.setText(dateArray[position]);
         locationTextField.setText(locationArray[position]);
-        imageView.setImageResource(imageIDarray[position]);
+        imageView.setImageResource(imageArray[position]);
         return rowView;
 
     };
 
-    //to store the animal images
-    private final Integer[] imageIDarray;
 
-    //to store the list of countries
-    private final String[] nameArray;
-
-    //to store the list of countries
-    private final String[] dateArray;
-
-    //
-    private final String[] locationArray;
 }
