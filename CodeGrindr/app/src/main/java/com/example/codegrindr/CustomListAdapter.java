@@ -9,15 +9,25 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CustomListAdapter extends ArrayAdapter {
+
     //to reference the Activity
     private final Activity context;
-    public CustomListAdapter(Activity context, String[] nameArrayParam, String[] dateArrayParam, String[] locationArrayParam, Integer[] imageIDArrayParam){
+    //to store the animal images
+    private final Integer[] imageArray;
+    //to store the list of countries
+    private final String[] hackathonNameArray;
+    //to store the list of countries
+    private final String[] dateArray;
+    // to store location of hackathon
+    private final String[] locationArray;
+
+    public CustomListAdapter(Activity context, String[] nameArrayParam, String[] dateArrayParam, String[] locationArrayParam, Integer[] imageArrayParam){
 
         super(context,R.layout.activity_registered_hackathon_row , nameArrayParam);
 
         this.context=context;
-        this.imageIDarray = imageIDArrayParam;
-        this.nameArray = nameArrayParam;
+        this.imageArray = imageArrayParam;
+        this.hackathonNameArray = nameArrayParam;
         this.dateArray = dateArrayParam;
         this.locationArray = locationArrayParam;
 
@@ -34,23 +44,11 @@ public class CustomListAdapter extends ArrayAdapter {
         ImageView imageView = (ImageView) rowView.findViewById(R.id.imageView);
 
         //this code sets the values of the objects to values from the arrays
-        nameTextField.setText(nameArray[position]);
+        nameTextField.setText(hackathonNameArray[position]);
         dateTextField.setText(dateArray[position]);
         locationTextField.setText(locationArray[position]);
-        imageView.setImageResource(imageIDarray[position]);
+        imageView.setImageResource(imageArray[position]);
         return rowView;
 
     };
-
-    //to store the animal images
-    private final Integer[] imageIDarray;
-
-    //to store the list of countries
-    private final String[] nameArray;
-
-    //to store the list of countries
-    private final String[] dateArray;
-
-    //
-    private final String[] locationArray;
 }
