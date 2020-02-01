@@ -42,13 +42,19 @@
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
+
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:onClick="logIn"
+            
         android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passEditText" />
@@ -59,6 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:onClick="signUp"
+
         android:text="Don't have an account? Sign up here!"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,5 +90,14 @@
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="@+id/passEditText"
         app:layout_constraintTop_toBottomOf="@+id/passEditText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/codegrindr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
