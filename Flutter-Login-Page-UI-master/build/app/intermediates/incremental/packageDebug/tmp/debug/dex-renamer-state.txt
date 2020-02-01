@@ -1,0 +1,4 @@
+#Sat Feb 01 00:49:43 EST 2020
+base.0=C\:\\Users\\Acer\\Desktop\\Flutter-Login-Page-UI-master\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
