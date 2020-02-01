@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import org.w3c.dom.Text;
+
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView signUpTextView = findViewById(R.id.signUpTextView);
         final EditText emailEditText = findViewById(R.id.emailEditText);
         final EditText passEditText = findViewById(R.id.passEditText);
+
 
 
         loginButton.setOnClickListener(new View.OnClickListener() {
