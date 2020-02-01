@@ -9,6 +9,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+//    Boolean logicModeActive = false;
+//
+//    public void redirectIfLogIn() {
+//        if (ParseUser.getCurrentUser() != null) {
+//            Intent intent = new Intent(getApplicationContext(), ChatUserListActivity.class);
+//            startActivity(intent);
+//        }
+//    }
+
     public void showSignUpPage() {
         Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
         startActivity(intent);
@@ -21,10 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void logIn(View view) {
         showRegisteredHackActivity();
+//        redirectIfLogIn();
     }
 
     public void signUp(View view) {
         showSignUpPage();
+//        redirectIfLogIn();
     }
 
 
@@ -32,5 +43,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        redirectIfLogIn();
     }
 }
