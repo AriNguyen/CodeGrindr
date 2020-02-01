@@ -15,12 +15,15 @@
         android:layout_marginTop="300dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
+
         android:drawableStart="@drawable/email_icon"
         android:drawableLeft="@drawable/email_icon"
+
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+
         android:paddingBottom="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,21 +51,29 @@
 
     <Button
         android:id="@+id/loginButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
 
-        android:onClick="logIn"
+        android:layout_marginRight="50dp"
         android:background="@drawable/rounded_button"
+        android:onClick="logIn"
+
+        android:outlineProvider="bounds"
+        android:elevation="2dp"
+        android:translationZ="2dp"
+        android:stateListAnimator="@null"
+
         android:text="LOGIN"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
