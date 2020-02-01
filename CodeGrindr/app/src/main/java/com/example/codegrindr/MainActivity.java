@@ -5,32 +5,63 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import org.w3c.dom.Text;
+
 
 public class MainActivity extends AppCompatActivity {
-
-    public void showSignUpPage() {
-        Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
-        startActivity(intent);
-    }
-
-    public void showRegisteredHackActivity() {
-        Intent intent = new Intent(getBaseContext(), RegisteredHackActivity.class);
-        startActivity(intent);
-    }
-
-    public void logIn(View view) {
-        showRegisteredHackActivity();
-    }
-
-    public void signUp(View view) {
-        showSignUpPage();
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Button loginButton = findViewById(R.id.loginButton);
+        final TextView signUpTextView = findViewById(R.id.signUpTextView);
+        final EditText emailEditText = findViewById(R.id.emailEditText);
+        final EditText passEditText = findViewById(R.id.passEditText);
+
+
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isEmpty(emailEditText)) {
+                    emailEditText.setError("You cannot leave this empty");
+                }
+                else if (isEmpty(passEditText)) {
+                    passEditText.setError("You cannot leave this empty");
+                }
+                else if (checkPasswordLeng(passEditText)) {
+                    passEditText.setError("Password length should be at least 10 characters");
+                    passEditText.setText("");
+                } else {
+            //final TextView lblUserName = findViewById(R.id.lblUserName);
+            //lblUserName.setText("Works!!");
+                    Intent FinishLogin = new Intent(getBaseContext(), RegisteredHackActivity.class);
+                    startActivity(FinishLogin);
+                }
+            }
+
+            private boolean checkPasswordLeng(EditText passText) {
+                if (passText.getText().toString().trim().length() >= 10) return false;
+                return true;
+            }
+
+            private boolean isEmpty(EditText etText) {
+                if (etText.getText().toString().trim().length() > 0) return false;
+                return true;
+            }
+        });
+
+        signUpTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent goToSignUp = new Intent(getBaseContext(), SignUpActivity.class);
+                startActivity(goToSignUp);
+            }
+        });
     }
 }
+
