@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:drawableStart="@drawable/ic_lock_outline_black_24dp"
@@ -83,8 +83,8 @@
         android:id="@+id/signUpTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:onClick="signUp"
-        android:layout_marginBottom="90dp"
         android:text="Don't have an account? Sign up here!"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -92,17 +92,17 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintVertical_bias="0.384" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
         android:id="@+id/rememberMeCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="30dp"
+        android:button="@drawable/image_checkbox"
         android:checked="true"
         android:text="Remember me"
-        android:button="@drawable/image_checkbox"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/passEditText"
         app:layout_constraintTop_toBottomOf="@+id/passEditText" />
@@ -111,6 +111,8 @@
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
         android:text="Forgot Password?"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="@+id/passEditText"
@@ -124,9 +126,12 @@
         android:layout_marginLeft="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/emailEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/codegrindr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
