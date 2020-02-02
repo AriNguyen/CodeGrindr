@@ -11,6 +11,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".hack_info"></activity>
         <activity
+            android:name=".GroupDashboardActivity"
+            android:label="@string/title_activity_group_dashboard"></activity>
+        <activity
             android:name=".SearchActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".UserProfile" />

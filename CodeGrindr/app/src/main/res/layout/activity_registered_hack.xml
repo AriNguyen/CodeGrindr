@@ -11,6 +11,7 @@
         android:layout_width="139dp"
         android:layout_height="157dp"
         android:layout_marginTop="79dp"
+        android:onClick="showUserInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -10,6 +10,11 @@ import android.widget.TextView;
 
 public class RegisteredHackActivity extends AppCompatActivity {
 
+    public void showUserInfo(View view) {
+        Intent intent = new Intent(getApplicationContext(), UserProfile.class);
+        startActivity(intent);
+    }
+
     public void searchHack(View view) {
         Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
         startActivity(intent);
