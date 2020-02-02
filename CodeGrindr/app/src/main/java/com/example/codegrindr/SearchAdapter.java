@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -45,7 +44,7 @@ public class SearchAdapter extends ArrayAdapter implements Filterable {
         TextView nameTextField = (TextView) rowView.findViewById(R.id.hackathon_name);
         TextView dateTextField = (TextView) rowView.findViewById(R.id.hackathon_date);
         TextView locationTextField = (TextView) rowView.findViewById(R.id.hackathon_location);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.imageView);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.logoImageView);
 
         //this code sets the values of the objects to values from the arrays
 

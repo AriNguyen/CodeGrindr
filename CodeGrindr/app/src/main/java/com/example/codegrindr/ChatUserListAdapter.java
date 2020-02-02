@@ -40,7 +40,7 @@ public class ChatUserListAdapter extends ArrayAdapter {
         TextView nameTextField = (TextView) rowView.findViewById(R.id.chatUserName);
         TextView chatPreviewTextField = (TextView) rowView.findViewById(R.id.chatPreview);
         TextView timestampTextField = (TextView) rowView.findViewById(R.id.chatTimestamp);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.imageView);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.logoImageView);
 
         //this code sets the values of the objects to values from the arrays
         nameTextField.setText(nameArray[position]);
