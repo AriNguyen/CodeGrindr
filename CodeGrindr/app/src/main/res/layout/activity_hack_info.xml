@@ -87,6 +87,8 @@
             android:layout_height="wrap_content"
             android:onClick="addMember"
             android:text="ADD MEMBER"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button"
             tools:layout_editor_absoluteX="148dp"
             tools:layout_editor_absoluteY="188dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
