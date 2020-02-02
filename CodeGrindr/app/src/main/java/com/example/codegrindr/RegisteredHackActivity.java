@@ -31,7 +31,7 @@ public class RegisteredHackActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    String userName = "John Doe";
+    String userName = "Nom Phan";
     String[] hackathonNameArray = {
             "Hoya Hacks",
             "TechTogether",

@@ -42,11 +42,20 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="149dp"
+                    android:layout_height="127dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="#00FDFCFC"
+                    app:srcCompat="@drawable/group_5" />
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/groupCardView1"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="230dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
@@ -217,7 +226,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Robotics"
+                        android:text="Social"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25dp"
                         android:textStyle="bold"
@@ -267,7 +276,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Robotics"
+                        android:text="Hardware"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25dp"
                         android:textStyle="bold"
@@ -289,7 +298,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="110dp"
                         android:gravity="center"
-                        android:text="Need UI/UX"
+                        android:text="Need Hardware"
                         android:textSize="20dp"
                         tools:text="Need UI/UX" />
 
@@ -317,7 +326,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Robotics"
+                        android:text="Data Science"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25dp"
                         android:textStyle="bold"
@@ -339,7 +348,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="110dp"
                         android:gravity="center"
-                        android:text="Need UI/UX"
+                        android:text="Need Python"
                         android:textSize="20dp"
                         tools:text="Need UI/UX" />
 
@@ -367,7 +376,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Robotics"
+                        android:text="Andriod App"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25dp"
                         android:textStyle="bold"
@@ -389,7 +398,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="110dp"
                         android:gravity="center"
-                        android:text="Need UI/UX"
+                        android:text="Need Full stack"
                         android:textSize="20dp"
                         tools:text="Need UI/UX" />
 
@@ -417,7 +426,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Robotics"
+                        android:text="Have Fun"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25dp"
                         android:textStyle="bold"
@@ -439,7 +448,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="110dp"
                         android:gravity="center"
-                        android:text="Need UI/UX"
+                        android:text="Need a Friend"
                         android:textSize="20dp"
                         tools:text="Need UI/UX" />
 
@@ -948,7 +957,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="170dp"
-                        android:text="TextView"
+                        android:text="Bon Ba University"
                         android:textSize="12dp"
                         tools:text="Computer Science - Boston University" />
 
@@ -958,7 +967,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="190dp"
-                        android:text="TextView"
+                        android:text="Interested in Poland"
                         android:textSize="12dp"
                         tools:text="Interested in Robotics" />
 
@@ -968,7 +977,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="210dp"
-                        android:text="TextView"
+                        android:text="Skills: Guitar, Compose"
                         android:textSize="12dp"
                         tools:text="Skills: C++, C, Python" />
 

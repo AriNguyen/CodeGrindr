@@ -19,20 +19,24 @@ public class ChatUserListActivity extends AppCompatActivity {
     String[] chatUserNameArray = {
             "Laurie Amway",
             "Rahul Sharma",
-            "Scott Pilgrim"};
+            "Scott Pilgrim",
+            "Hoya Hack Group"};
     String[] chatPreviewArray = {
             "Shall we meet again today?",
             "Shall we meet again tonight?",
-            "Shall we meet again tomorrow?"};
+            "Shall we meet again tomorrow?",
+            "What about you guys?"};
     String[] chatTimestampArray = {
             "9:40 AM",
             "3:27 PM",
-            "8:37 PM"
+            "8:37 PM",
+            "9:40 PM"
     };
     Integer[] chatImageArray = {
             R.drawable.circle_user,
-            R.drawable.circle_user,
-            R.drawable.circle_user
+            R.drawable.circle_user_7,
+            R.drawable.circle_user_8,
+            R.drawable.hoya
     };
 
     ListView listView;
