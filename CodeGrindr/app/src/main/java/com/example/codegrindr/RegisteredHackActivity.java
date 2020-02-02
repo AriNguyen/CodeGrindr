@@ -18,10 +18,12 @@ public class RegisteredHackActivity extends AppCompatActivity {
     String userName = "John Doe";
     String[] hackathonNameArray = {
             "Hoya Hacks",
+            "TechTogether",
             "Make Harvard",
             "DragonHacks"};
 
     String[] dateArray = {
+            "Jan 31st - Feb 2nd 2020",
             "Jan 31st - Feb 2nd 2020",
             "Feb 1st - Feb 2nd 2020",
             "Feb 22nd - Feb 23rd 2020"
@@ -30,10 +32,12 @@ public class RegisteredHackActivity extends AppCompatActivity {
     String[] locationArray = {
             "Washington DC, US",
             "Boston MA, US",
+            "Boston MA, US",
             "Philadelphia PA, US"
     };
 
     Integer[] imageArray = {R.drawable.hoya,
+            R.drawable.techtogether,
             R.drawable.makeharvard,
             R.drawable.dragonhacks
     };

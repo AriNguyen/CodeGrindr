@@ -2,11 +2,9 @@ package com.example.codegrindr;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import java.util.ArrayList;
 
 public class ChatUserListActivity extends AppCompatActivity {
 
@@ -32,9 +30,6 @@ public class ChatUserListActivity extends AppCompatActivity {
 
     ListView listView;
 
-
-
-//    ArrayAdapter arrayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

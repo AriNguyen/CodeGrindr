@@ -37,7 +37,6 @@ public class ChatUserListAdapter extends ArrayAdapter {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.activity_chat_user_row, null,true);
 
-        //this code gets references to objects in the activity_registered_hackathon_row.xml file
         TextView nameTextField = (TextView) rowView.findViewById(R.id.chatUserName);
         TextView chatPreviewTextField = (TextView) rowView.findViewById(R.id.chatPreview);
         TextView timestampTextField = (TextView) rowView.findViewById(R.id.chatTimestamp);
