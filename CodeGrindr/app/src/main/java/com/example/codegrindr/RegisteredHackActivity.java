@@ -46,7 +46,8 @@ public class RegisteredHackActivity extends AppCompatActivity {
             "Philadelphia PA, US"
     };
 
-    Integer[] imageArray = {R.drawable.hoya,
+    Integer[] imageArray = {
+            R.drawable.hoya,
             R.drawable.techtogether,
             R.drawable.makeharvard,
             R.drawable.dragonhacks
@@ -64,7 +65,7 @@ public class RegisteredHackActivity extends AppCompatActivity {
         final TextView user_name = findViewById(R.id.user_name);
 
         CustomListAdapter arrayAdapter = new CustomListAdapter(this, hackathonNameArray, dateArray, locationArray, imageArray);
-        listView = (ListView) findViewById(R.id.registered_hackathon);
+        listView = findViewById(R.id.registered_hackathon);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
