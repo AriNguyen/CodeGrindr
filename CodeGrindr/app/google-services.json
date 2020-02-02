@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "998299543185",
+    "firebase_url": "https://codegrindr-e8a0f.firebaseio.com",
+    "project_id": "codegrindr-e8a0f",
+    "storage_bucket": "codegrindr-e8a0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998299543185:android:71ab803c4a0c80b6ba0130",
+        "android_client_info": {
+          "package_name": "com.example.codegrindr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998299543185-ltloh4rj6on3k9d866k0uiqacbi3rnge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.codegrindr",
+            "certificate_hash": "72c85d70b6e554b2a2aa47b5bcbbd9786199bc21"
+          }
+        },
+        {
+          "client_id": "998299543185-p5588r35it3puikbsl8euctnranv9i46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARAC9hTj1J7iloLo9bxjrKxJFOguaF5ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998299543185-p5588r35it3puikbsl8euctnranv9i46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
