@@ -40,7 +40,7 @@ public class ChatUserListActivity extends AppCompatActivity {
         final ImageView userImage = findViewById(R.id.userImage);
 
         ChatUserListAdapter whatever = new ChatUserListAdapter (this, chatUserNameArray, chatPreviewArray, chatTimestampArray, chatImageArray);
-        listView = (ListView) findViewById(R.id.chatUserListView);
+        listView = findViewById(R.id.chatUserListView);
         listView.setAdapter(whatever);
 
         userImage.setImageResource(userImageID);

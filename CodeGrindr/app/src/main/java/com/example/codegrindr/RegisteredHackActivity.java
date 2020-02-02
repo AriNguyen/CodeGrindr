@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -12,6 +13,10 @@ public class RegisteredHackActivity extends AppCompatActivity {
 
     public void showUserInfo(View view) {
         Intent intent = new Intent(getApplicationContext(), UserProfile.class);
+        startActivity(intent);
+    }
+    public void showHackInfo(View view) {
+        Intent intent = new Intent(getApplicationContext(), hack_info.class);
         startActivity(intent);
     }
 
@@ -41,7 +46,8 @@ public class RegisteredHackActivity extends AppCompatActivity {
             "Philadelphia PA, US"
     };
 
-    Integer[] imageArray = {R.drawable.hoya,
+    Integer[] imageArray = {
+            R.drawable.hoya,
             R.drawable.techtogether,
             R.drawable.makeharvard,
             R.drawable.dragonhacks
@@ -58,11 +64,18 @@ public class RegisteredHackActivity extends AppCompatActivity {
 
         final TextView user_name = findViewById(R.id.user_name);
 
-        CustomListAdapter whatever = new CustomListAdapter(this, hackathonNameArray, dateArray, locationArray, imageArray);
-        listView = (ListView) findViewById(R.id.registered_hackathon);
-        listView.setAdapter(whatever);
+        CustomListAdapter arrayAdapter = new CustomListAdapter(this, hackathonNameArray, dateArray, locationArray, imageArray);
+        listView = findViewById(R.id.registered_hackathon);
+        listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+                showHackInfo(view);
+            }
+        });
 
         user_name.setText(userName);
+
 
     }
 }

@@ -1,6 +1,7 @@
 package com.example.codegrindr;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,8 @@ public class CustomListAdapter extends ArrayAdapter {
     // to store location of hackathon
     private final String[] locationArray;
 
+
+
     public CustomListAdapter(Activity context, String[] nameArrayParam, String[] dateArrayParam, String[] locationArrayParam, Integer[] imageArrayParam){
 
         super(context,R.layout.activity_registered_hackathon_row , nameArrayParam);
@@ -32,6 +35,7 @@ public class CustomListAdapter extends ArrayAdapter {
         this.locationArray = locationArrayParam;
 
     }
+
 
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
