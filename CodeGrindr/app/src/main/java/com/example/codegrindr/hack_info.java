@@ -34,8 +34,8 @@ public class hack_info extends AppCompatActivity {
 
     Integer[] imageIDArray = {
             R.drawable.circle_user,
-            R.drawable.circle_user,
-            R.drawable.circle_user
+            R.drawable.circle_user_7,
+            R.drawable.circle_user_8
     };
 
     ListView listView;

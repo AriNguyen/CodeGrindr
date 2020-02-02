@@ -720,8 +720,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/circle_user_2"
+                        tools:srcCompat="@drawable/circle_user_2" />
 
                     <Button
                         android:id="@+id/messageUserButton2"
@@ -806,8 +806,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/circle_user_3"
+                        tools:srcCompat="@drawable/circle_user_3" />
 
                     <Button
                         android:id="@+id/messageUserButton3"
@@ -892,8 +892,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/circle_user_4"
+                        tools:srcCompat="@drawable/circle_user_4" />
 
                     <Button
                         android:id="@+id/messageUserButton4"
@@ -937,7 +937,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="135dp"
-                        android:text="TextView"
+                        android:text="Ngan Nguyen"
                         android:textSize="25dp"
                         android:textStyle="bold"
                         tools:text="Laurie Amway" />
@@ -978,8 +978,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/circle_user_5"
+                        tools:srcCompat="@drawable/circle_user_5" />
 
                     <Button
                         android:id="@+id/messageUserButton5"
@@ -1064,8 +1064,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/profile"
+                        tools:srcCompat="@drawable/profile" />
 
                     <Button
                         android:id="@+id/messageUserButton6"
@@ -1150,8 +1150,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/profile"
+                        tools:srcCompat="@drawable/profile" />
 
                     <Button
                         android:id="@+id/messageUserButton7"
@@ -1236,8 +1236,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/profile"
+                        tools:srcCompat="@drawable/profile" />
 
                     <Button
                         android:id="@+id/messageUserButton8"
@@ -1322,8 +1322,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/profile"
+                        tools:srcCompat="@drawable/profile" />
 
                     <Button
                         android:id="@+id/messageUserButton9"
@@ -1408,8 +1408,8 @@
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/circle_user"
-                        tools:srcCompat="@drawable/circle_user" />
+                        app:srcCompat="@drawable/profile"
+                        tools:srcCompat="@drawable/profile" />
 
                     <Button
                         android:id="@+id/messageUserButton10"
