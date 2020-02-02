@@ -6,11 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".RegisteredHackActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:longClickable="false"
+        app:itemIconSize="24dp"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="#000000"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
     <ImageView
         android:id="@+id/user_image"
         android:layout_width="139dp"
         android:layout_height="157dp"
-        android:layout_marginTop="79dp"
+        android:onClick="showUserInfo"
+        app:layout_constraintBottom_toTopOf="@+id/registered_hackathon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,18 +37,32 @@
         android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/user_image" />
 
     <ListView
         android:id="@+id/registered_hackathon"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="344dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" >
+        tools:layout_editor_absoluteX="0dp">
+
     </ListView>
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#00FFFFFF"
+        android:onClick="searchHack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

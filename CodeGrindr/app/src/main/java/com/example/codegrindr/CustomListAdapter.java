@@ -21,6 +21,8 @@ public class CustomListAdapter extends ArrayAdapter {
     // to store location of hackathon
     private final String[] locationArray;
 
+
+
     public CustomListAdapter(Activity context, String[] nameArrayParam, String[] dateArrayParam, String[] locationArrayParam, Integer[] imageArrayParam){
 
         super(context,R.layout.activity_registered_hackathon_row , nameArrayParam);
@@ -33,6 +35,7 @@ public class CustomListAdapter extends ArrayAdapter {
 
     }
 
+
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.activity_registered_hackathon_row, null,true);
@@ -41,7 +44,7 @@ public class CustomListAdapter extends ArrayAdapter {
         TextView nameTextField = (TextView) rowView.findViewById(R.id.hackathon_name);
         TextView dateTextField = (TextView) rowView.findViewById(R.id.hackathon_date);
         TextView locationTextField = (TextView) rowView.findViewById(R.id.hackathon_location);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.imageView);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.logoImageView);
 
         //this code sets the values of the objects to values from the arrays
         nameTextField.setText(hackathonNameArray[position]);

@@ -9,10 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisteredHackActivity"/>
-        <activity android:name=".CustomListAdapter"/>
+        <activity android:name=".HackInfoAdapter"></activity>
+        <activity android:name=".ChatConversationAdapter" />
+        <activity android:name=".hack_info" />
+        <activity
+            android:name=".GroupDashboardActivity"
+            android:label="@string/title_activity_group_dashboard" />
+        <activity
+            android:name=".SearchActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".RegisteredHackActivity" />
+        <activity android:name=".CustomListAdapter" />
         <activity android:name=".InformationActivity" />
         <activity android:name=".SignUpActivity" />
+        <activity android:name=".ChatUserListActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
