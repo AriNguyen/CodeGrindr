@@ -1145,7 +1145,7 @@
                         tools:text="Skills: C++, C, Python" />
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/hackathonImage"
                         android:layout_width="89dp"
                         android:layout_height="91dp"
                         android:layout_marginLeft="35dp"

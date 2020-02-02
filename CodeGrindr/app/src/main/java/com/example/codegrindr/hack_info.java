@@ -7,12 +7,38 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class hack_info extends AppCompatActivity {
 
     Intent intent;
+
+    String[] nameArray = {
+            "Laurie Amway",
+            "Rahul Sharma",
+            "Scott Pilgrim"};
+
+    String[] universityArray = {
+            "Boston University",
+            "Saint Joseph University",
+            "Drexel University"
+    };
+
+    String[] skillArray = {
+            "Skills: C++, C, Python",
+            "Skills: MySQL, Python",
+            "Skills: R, Python, Java"
+    };
+
+    Integer[] imageIDArray = {
+            R.drawable.circle_user,
+            R.drawable.circle_user,
+            R.drawable.circle_user
+    };
+
+    ListView listView;
 
     public void showDashboard() {
         Intent intent = new Intent(getApplicationContext(), GroupDashboardActivity.class);
@@ -27,6 +53,10 @@ public class hack_info extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hack_info);
+
+        HackInfoAdapter whatever = new HackInfoAdapter (this, nameArray, universityArray, imageIDArray, skillArray);
+        listView = findViewById(R.id.memberListView);
+        listView.setAdapter(whatever);
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
