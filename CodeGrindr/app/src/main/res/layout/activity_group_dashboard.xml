@@ -156,7 +156,16 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     app:cardBackgroundColor="#B5A3ED"
-                    app:cardCornerRadius="20dp" />
+                    app:cardCornerRadius="20dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="89dp"
+                        android:layout_height="91dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        tools:srcCompat="@drawable/circle_user" />
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/memberCardView2"
