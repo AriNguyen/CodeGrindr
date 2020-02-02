@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ChatConversationAdapter"></activity>
+        <activity android:name=".hack_info"></activity>
         <activity
             android:name=".SearchActivity"
             android:windowSoftInputMode="adjustPan" />
