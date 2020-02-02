@@ -31,8 +31,8 @@ public class ChatUserListActivity extends AppCompatActivity {
     };
     Integer[] chatImageArray = {
             R.drawable.circle_user,
-            R.drawable.circle_user,
-            R.drawable.circle_user
+            R.drawable.circle_user_7,
+            R.drawable.circle_user_8
     };
 
     ListView listView;
