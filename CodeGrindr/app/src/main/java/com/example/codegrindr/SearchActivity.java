@@ -1,5 +1,6 @@
 package com.example.codegrindr;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -9,6 +10,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -19,6 +21,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -26,6 +30,9 @@ import java.util.List;
 import java.util.Random;
 
 public class SearchActivity extends AppCompatActivity {
+
+    Intent intent;
+
     EditText txtSearch;
     SearchAdapter searchAdapter;
 
@@ -107,6 +114,29 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
 
+            }
+        });
+
+        BottomNavigationView navView = findViewById(R.id.nav_view);
+        navView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+            @Override
+            public void onNavigationItemReselected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.navigation_home:
+                        intent = new Intent(getApplicationContext(), RegisteredHackActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.navigation_dashboard:
+                        intent = new Intent(getApplicationContext(), GroupDashboardActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.navigation_chat:
+                        intent = new Intent(getApplicationContext(), ChatUserListActivity.class);
+                        startActivity(intent);
+                        break;
+                }
             }
         });
     }
