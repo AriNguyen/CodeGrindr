@@ -117,7 +117,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Robotics"
+                        android:text="App Dev"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25dp"
                         android:textStyle="bold"
@@ -129,7 +129,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="80dp"
                         android:gravity="center"
-                        android:text="3/4 people"
+                        android:text="2/4 people"
                         android:textSize="20dp"
                         tools:text="3/4 people" />
 
@@ -139,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="110dp"
                         android:gravity="center"
-                        android:text="Need UI/UX"
+                        android:text="Need back end"
                         android:textSize="20dp"
                         tools:text="Need UI/UX" />
 
@@ -167,7 +167,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Robotics"
+                        android:text="Game Dev"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25dp"
                         android:textStyle="bold"
@@ -179,7 +179,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="80dp"
                         android:gravity="center"
-                        android:text="3/4 people"
+                        android:text="1/4 people"
                         android:textSize="20dp"
                         tools:text="3/4 people" />
 
@@ -189,7 +189,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="110dp"
                         android:gravity="center"
-                        android:text="Need UI/UX"
+                        android:text="Need a girl"
                         android:textSize="20dp"
                         tools:text="Need UI/UX" />
 
@@ -710,7 +710,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="210dp"
-                        android:text="TextView"
+                        android:text="Skills: C++, C, Python"
                         android:textSize="12dp"
                         tools:text="Skills: Python" />
 
@@ -765,7 +765,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="135dp"
-                        android:text="TextView"
+                        android:text="Nom Phan"
                         android:textSize="25dp"
                         android:textStyle="bold"
                         tools:text="Laurie Amway" />
@@ -776,7 +776,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="170dp"
-                        android:text="TextView"
+                        android:text="Computer Science - Nom University"
                         android:textSize="12dp"
                         tools:text="Computer Science - Boston University" />
 
@@ -796,7 +796,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="210dp"
-                        android:text="TextView"
+                        android:text="Skills: eating, breathing"
                         android:textSize="12dp"
                         tools:text="Skills: C++, C, Python" />
 
@@ -851,7 +851,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="135dp"
-                        android:text="TextView"
+                        android:text="Ari Hihi"
                         android:textSize="25dp"
                         android:textStyle="bold"
                         tools:text="Laurie Amway" />
@@ -862,7 +862,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="170dp"
-                        android:text="TextView"
+                        android:text="Computer Science - Drexel University"
                         android:textSize="12dp"
                         tools:text="Computer Science - Boston University" />
 
@@ -872,7 +872,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="190dp"
-                        android:text="TextView"
+                        android:text="Interested in Nom"
                         android:textSize="12dp"
                         tools:text="Interested in Robotics" />
 
@@ -882,7 +882,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="210dp"
-                        android:text="TextView"
+                        android:text="Skills: C++, C, Python"
                         android:textSize="12dp"
                         tools:text="Skills: C++, C, Python" />
 
