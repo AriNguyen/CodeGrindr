@@ -1,7 +1,6 @@
 package com.example.codegrindr;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +44,7 @@ public class CustomListAdapter extends ArrayAdapter {
         TextView nameTextField = (TextView) rowView.findViewById(R.id.hackathon_name);
         TextView dateTextField = (TextView) rowView.findViewById(R.id.hackathon_date);
         TextView locationTextField = (TextView) rowView.findViewById(R.id.hackathon_location);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.imageView);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.logoImageView);
 
         //this code sets the values of the objects to values from the arrays
         nameTextField.setText(hackathonNameArray[position]);
